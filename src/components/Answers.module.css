@@ -1,3 +1,23 @@
 .answers {
+  max-width: 600px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+ul.answers {
+  padding: 0;
+}
+
+.answers li {
+  list-style: none;
+}
+
+.answer {
   text-align: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px 0;
+  border-radius: 2px;
+  border: 1px solid #ddd;
 }

@@ -2,15 +2,13 @@ const questions = [
   {
     "question": "What... is your name?",
     "answer": {
-      "type": "input",
-      "content": ""
+      "type": "input"
     }
   },
   {
     "question": "What... is your quest?",
     "answer": {
-      "type": "input",
-      "content": ""
+      "type": "input"
     }
   },
   {
@@ -20,22 +18,23 @@ const questions = [
       "options": [
         {"value": "blue"},
         {"value": "red"}
-      ],
-      "content": ""
+      ]
     }
   },
   {
     "question": "What... is the capital of Asseria?",
     "answer": {
-      "type": "input",
-      "content": ""
+      "type": "input"
     }
   },
   {
     "question": "What... is the airspeed velocity of an unladen swallow?",
     "answer": {
-      "type": "input",
-      "content": ""
+      "type": "radio",
+      "options": [
+        {"value": "African"},
+        {"value": "European"}
+      ]
     }
   }
 ]

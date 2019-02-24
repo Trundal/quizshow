@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import styles from './Select.module.css';
+import styles from './Select.module.css';
 
 const Select = ({ answer={}, options={}, handleChange }) => {
 
@@ -11,7 +11,7 @@ const Select = ({ answer={}, options={}, handleChange }) => {
   };
 
   return (
-      <select value={answer} onChange={handleChange}>
+      <select value={answer} onChange={handleChange} className={ styles.select }>
         { selectOptions(options) }
       </select>
   );
