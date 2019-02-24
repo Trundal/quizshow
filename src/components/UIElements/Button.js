@@ -5,9 +5,9 @@ import styles from './Button.module.css';
 
 const Button = ({ text='', link=null, disabled=false }) => {
     return (
-      <button className={ styles.button } disabled={ disabled }>
-        { !disabled ? <Link to={link}>{text}</Link> : <div>{text}</div> }
-      </button>
+      !disabled ?
+        <Link to={link} className={styles.button}>{text}</Link> :
+        <span className={styles.disabledButton}>{text}</span>
     );
 }
 

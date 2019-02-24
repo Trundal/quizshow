@@ -1,8 +1,8 @@
 .question {
   text-align: center;
   max-width: 600px;
-  margin: auto;
   width: 90%;
+  margin: 30px auto;
 }
 
 .title {
