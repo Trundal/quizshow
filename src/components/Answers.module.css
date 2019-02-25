@@ -13,11 +13,17 @@ ul.answers {
 }
 
 .answer {
+  composes: card from './__theme.css';
   text-align: center;
-  background-color: #f7f7f7;
   padding: 10px;
   box-sizing: border-box;
   margin: 20px 0;
-  border-radius: 2px;
-  border: 1px solid #ddd;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.response {
+  margin-top: 10px;
 }

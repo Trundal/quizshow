@@ -6,12 +6,11 @@
 }
 
 .radio {
+  composes: card from '../__theme.css';
   display: flex;
   justify-content: center;
-  background-color: #fafafa;
-  border-radius: 2px;
-  border: 1px solid #ddd;
   width: 49%;
+  margin-bottom: 1%;
 }
 
 .label {

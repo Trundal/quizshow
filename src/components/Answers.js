@@ -7,9 +7,9 @@ const Answers = () => {
 
   const answerList = (questionList) => {
     return questionList.map((question, index) =>
-      <li className= { styles.answer } key={index}>
-        <div>{question.question}</div>
-        <div>{localStorage.getItem(`answer${index}`)}</div>
+      <li className={ styles.answer } key={index}>
+        <div className={ styles.question }>{question.question}</div>
+        <div className={ styles.response }>{localStorage.getItem(`answer${index}`)}</div>
       </li>
     )
   };
