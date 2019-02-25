@@ -8,7 +8,7 @@ import styles from './Question.module.css';
 
 const Question = ( { match = {} } ) => {
     let currentStep = 0;
-    if (match.params.index <= questionList.length && match.params.index >= 0 ) {
+    if (match.params && match.params.index <= questionList.length && match.params.index >= 0 ) {
       currentStep = parseInt(match.params.index)
     }
     localStorage.setItem("currentStep", currentStep);
