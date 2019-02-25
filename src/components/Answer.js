@@ -14,8 +14,13 @@ const Answer = ( { answer="", step=0, length=0, type="", options={} } ) => {
   });
 
   const handleChange = (event) => {
-    localStorage.setItem(`answer${step}`, event.target.value);
-    setStoredAnswer(event.target.value)
+    //handles edgecase where 'handleChange' is triggered programatically rather than through user input
+    let value="";
+    if(typeof event === "string") value=event
+    else if(typeof event.target !== "undefined") value=event.target.value
+
+    localStorage.setItem(`answer${step}`, value);
+    setStoredAnswer(value)
   }
 
   const prevStep = step - 1;

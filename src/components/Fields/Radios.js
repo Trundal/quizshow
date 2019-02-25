@@ -4,6 +4,9 @@ import styles from './Radios.module.css';
 
 const Radios = ({ answer={}, options={}, handleChange }) => {
 
+  // handles edgecase where no options are provided
+  if(!options[0]) handleChange("No options found...")
+
   return (
       <div className={styles.radios}>
         { options[0] ?
@@ -22,7 +25,7 @@ const Radios = ({ answer={}, options={}, handleChange }) => {
               </label>
             </div>
         ) :
-          <div>No options found...</div> }
+          <div className={styles.errorBox}>No options found...</div> }
       </div>
   );
 }

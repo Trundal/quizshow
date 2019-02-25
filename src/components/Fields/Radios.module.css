@@ -21,3 +21,11 @@
 .input {
   margin-right: 10px;
 }
+
+.errorBox {
+  composes: card from '../__theme.css';
+  margin: auto;
+  width: 100%;
+  padding: 20px 0;
+  color: red;
+}

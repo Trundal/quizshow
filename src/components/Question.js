@@ -14,7 +14,6 @@ const Question = ( { match = {} } ) => {
     localStorage.setItem("currentStep", currentStep);
 
     return (
-
       <div className= { styles.question }>
         <Progress numSteps={questionList.length} currentStep={ currentStep } />
         <h2 className={ styles.title }>{ questionList[currentStep].question }</h2>
