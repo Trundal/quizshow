@@ -16,8 +16,9 @@ const questions = [
     "answer": {
       "type": "select",
       "options": [
-        {"value": "blue"},
-        {"value": "red"}
+        {"value": ""},
+        {"value": "Blue"},
+        {"value": "Red"}
       ]
     }
   },

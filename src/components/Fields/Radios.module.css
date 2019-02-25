@@ -1,11 +1,24 @@
-.answer {
-  text-align: center;
+.radios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.buttons {
+.radio {
   display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #aaa;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  width: 49%;
+}
+
+.label {
   padding: 20px 0;
-  margin: 50px 0;
+  cursor: pointer;
+}
+
+.input {
+  margin-right: 10px;
 }

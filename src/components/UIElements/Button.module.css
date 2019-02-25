@@ -16,7 +16,7 @@
     border: 1px solid #ddd
 }
 
-.disabledButton {
+.disabled {
   text-align: center;
   padding: 10px;
   width: 100px;
@@ -24,4 +24,8 @@
   border: 1px solid grey;
   text-decoration: none;
   color: grey;
+}
+
+.hidden {
+  display: hidden;
 }

@@ -38,7 +38,7 @@ const Answer = ( { answer="", step=0, length=0, type="", options={} } ) => {
     <div className= { styles.answer }>
       { answerField(type, options) }
       <div className={ styles.buttons }>
-        { prevStep >= 0 ? <Button link={`/question/${prevStep}`} text="Back" /> : null }
+        { prevStep >= 0 ? <Button link={`/question/${prevStep}`} text="Back" /> : <Button hidden={true} /> }
         { nextStep < length ? <Button link={`/question/${nextStep}`} disabled={!storedAnswer} text="Next" /> : <Button link={`/answers`} disabled={!storedAnswer} text="Answers" /> }
       </div>
     </div>
