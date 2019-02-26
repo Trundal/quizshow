@@ -27,7 +27,7 @@ const questions = [
     "answer": {
       "type": "radio",
       "options": [
-        {"value": "I don’t know that"}
+        {"value": "I don’t know"}
       ]
     }
   },
