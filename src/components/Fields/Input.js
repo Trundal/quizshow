@@ -7,6 +7,7 @@ const Input = ({ answer="", handleChange }) => {
       <input className={styles.input}
         value={ answer }
         onChange={ handleChange }
+        placeholder="please answer..."
       />
     );
 }

@@ -18,14 +18,17 @@ const questions = [
       "options": [
         {"value": ""},
         {"value": "Blue"},
-        {"value": "Red"}
+        {"value": "Yellow"}
       ]
     }
   },
   {
     "question": "What... is the capital of Asseria?",
     "answer": {
-      "type": "input"
+      "type": "radio",
+      "options": [
+        {"value": "I don’t know that"}
+      ]
     }
   },
   {
