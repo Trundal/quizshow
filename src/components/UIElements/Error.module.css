@@ -1,0 +1,7 @@
+.error {
+  composes: card from '../__theme.css';
+  margin: auto;
+  width: 100%;
+  padding: 20px 0;
+  color: red;
+}

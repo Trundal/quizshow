@@ -7,7 +7,7 @@ import styles from './Answers.module.css'
 const Answers = () => {
 
   return (
-    localStorage.getItem("currentStep") ?
+    localStorage.getItem('currentStep') ?
       <ul className= { styles.answers }>
         { questionList.map((question, index) =>
           <li className={ styles.answer } key={index}>

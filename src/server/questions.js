@@ -40,4 +40,6 @@ const questions = [
   }
 ]
 
+// const questions = {"error": "invalidJSON"}
+
 export default questions

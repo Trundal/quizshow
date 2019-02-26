@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from '../components/UIElements/Button';
+import Button from '../../components/UIElements/Button';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

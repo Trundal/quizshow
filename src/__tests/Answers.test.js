@@ -1,9 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme'
 import Answers from '../components/Answers';
+import { Redirect } from "react-router-dom";
+import questionList from '../server/questions'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Answers />, div);
-  ReactDOM.unmountComponentAtNode(div);
+let wrapper;
+
+beforeEach(() => {
+    wrapper = shallow(<Answers />);
+});
+
+it('Redirects to start page if no steps taken', () => {
+  expect(wrapper.find(Redirect).length).toEqual(1);
+});
+
+it('Renders all questions if steps have been taken', () => {
+  wrapper.setProps({ step: 4 });
+  expect(wrapper.find('li').length).toEqual(questionList.length);
 });

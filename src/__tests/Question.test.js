@@ -1,9 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme'
 import Question from '../components/Question';
+import Progress from '../components/Progress';
+import Answer from '../components/Answer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Question />, div);
-  ReactDOM.unmountComponentAtNode(div);
+let wrapper;
+
+beforeEach(() => {
+    wrapper = shallow(<Question />);
+});
+
+it('renders the Progress Bar and Answer block', () => {
+  expect(wrapper.find(Progress).length).toEqual(1);
+  expect(wrapper.find(Answer).length).toEqual(1);
 });
